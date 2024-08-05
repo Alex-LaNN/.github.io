@@ -70,6 +70,60 @@ body {
   margin-top: 50px;
 }
 
+.education-item {
+  margin-bottom: 30px;
+}
+
+.education-item:not(:first-child) {
+  margin-top: 30px;
+}
+
+.place-study {
+  margin-bottom: 10px;
+}
+
+.profession {
+  margin-bottom: 10px;
+}
+
+.dates {
+  margin-bottom: 5px;
+}
+
+.education .diploma-info {
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+.education .diploma-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.education .diploma-link {
+  color: #007bff;
+  text-decoration: none;
+  padding: 2px 5px;
+  border: 1px solid #007bff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.education .diploma-link:hover {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+.diploma-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.diploma-link:hover {
+  text-decoration: underline;
+}
+
 .place-study {
   font-style: normal;
   font-weight: 700;
@@ -118,31 +172,32 @@ body {
 }
 
 .contacts {
-  margin-bottom: 45px;
+  margin-bottom: 20px;
   margin-top: 55px;
 }
 
-.tech-skills {
-  margin-bottom: 45px;
-}
-
-.sidebar-title {
-  color: #ffffff;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 15px;
+.contact-item {
+  display: flex;
+  align-items: baseline;
   margin-bottom: 10px;
 }
 
 .contact-type {
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 14px;
+  display: inline-flex;
+  align-items: center;
   line-height: 24px;
-  min-width: 70px;
+  min-width: 100px;
   display: inline-block;
   color: #ffffff;
+}
+
+.contact-type i {
+  width: 20px;
+  margin-right: 5px;
+  text-align: center;
 }
 
 .contacts p {
@@ -150,18 +205,32 @@ body {
   align-items: baseline;
 }
 
-.invisible {
-  color: #1e2939;
-}
-
 .contact-link {
+  flex: 1;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  margin-left: 15px;
+  margin-left: 10px;
   color: rgb(130, 194, 66);
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #007bff;
+}
+
+.fa-phone { color: #28a745; }
+.fa-envelope { color: #dc3545; }
+.fa-telegram-plane { color: #0088cc; }
+.fa-github { color: #333; }
+.fa-linkedin { color: #0077b5; }
+
+
+.tech-skills {
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
 
 .tech-skills-list {
@@ -182,14 +251,77 @@ body {
   line-height: 24px;
 }
 
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: -40px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 20px;
+  width: 45%;
+  margin-top: 0;
+}
+
+.skills-item {
+  margin-bottom: 5px;
+}
+
+.skills-text {
+  font-size: 14px;
+}
+
+.skills-item:before {
+  content: "\2022";
+  color: #fb6d3a;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.sidebar-title {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 15px;
+  margin-bottom: 20px;
+}
+
+.soft-skills {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.soft-skills-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -40px;
+}
+
 .soft-skills-list {
   color: #ffffff;
-  padding: 0;
-  margin-left: 20px;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .soft-skills-item {
   color: #fb6d3a;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 5px;
+}
+
+.soft-skills-item::before {
+  content: "\2022";
+  color: #fb6d3a;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
 
 .soft-skills-text {

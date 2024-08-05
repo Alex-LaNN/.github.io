@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Resume</title>
   </head>
@@ -45,22 +49,42 @@
               Front-End Developer <span class="work-company">Freelance</span>
             </h4>
             <p class="dates">
-              September 2019 - up to now <span class="line">|</span> Ukraine
+              September 2023 - up to now <span class="line">|</span> Ukraine
             </p>
             <ul class="work-list">
               <li class="work-list-item">
-                Developed and maintained code for client websites primarily using HTML, CSS, JavaScript, and jQuery.
+                Developed and maintained code for client websites primarily
+                using HTML, CSS, JavaScript, and jQuery.
               </li>
             </ul>
           </div>
           <!--Education-->
           <div class="education">
             <h3 class="title">Education</h3>
-            <h4 class="place-study">National Flight Academy of Ukraine</h4>
-            <h4 class="profession">Air traffic control engineer</h4>
-            <p class="dates">
-              September 1992 - June 1997 <span class="line">|</span> Ukraine
-            </p>
+            <div class="education-item">
+              <h4 class="place-study">National Flight Academy of Ukraine</h4>
+              <h4 class="profession">Air traffic control engineer</h4>
+              <p class="dates">
+                September 1992 - June 1997 <span class="line">|</span> Ukraine
+              </p>
+            </div>
+            <div class="education-item">
+              <h4 class="place-study">Ш++ (Programming School)</h4>
+              <h4 class="profession">Programming Course</h4>
+              <p class="dates">
+                December 2022 - February 2023
+                <span class="line">|</span> Ukraine
+              </p>
+              <p class="diploma-info">
+                <span class="diploma-label">Diploma:</span>
+                <a
+                  href="https://diploma.programming.org.ua/en/d/Z8pyND0GWboJVOmnGPdx9XP1M4Yk627z"
+                  target="_blank"
+                  class="diploma-link"
+                  >View Diploma</a
+                >
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -70,62 +94,91 @@
         <!--Contacts-->
         <div class="contacts">
           <h3 class="sidebar-title">Contacts</h3>
-          <p>
-            <span class="contact-type"
-              >Tel:
-            </span>
+          <div class="contact-item">
+            <span class="contact-type"><i class="fas fa-phone"></i>Tel:</span>
             <a href="tel:+380509099626" class="contact-link">+38 050 9099626</a>
-          </p>
-          <p>
-            <span class="contact-type">E-mail:</span>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alex75klg@gmail.com" class="contact-link" target="_blank">alex75klg@gmail.com</a>
-          </p>
-          <p>
-            <span class="contact-type">Telegram:</span>
-            <a href="https://t.me/Alex_LaNN" class="contact-link" target="_blank">@Alex_LaNN</a>
-          </p>
+          </div>
+          <div class="contact-item">
+            <span class="contact-type"
+              ><i class="fas fa-envelope"></i>E-mail:</span
+            >
+            <a href="mailto:alex75klg@gmail.com" class="contact-link"
+              >alex75klg@gmail.com</a
+            >
+          </div>
+          <div class="contact-item">
+            <span class="contact-type"
+              ><i class="fab fa-telegram-plane"></i>Telegram:</span
+            >
+            <a
+              href="https://t.me/Alex_LaNN"
+              class="contact-link"
+              target="_blank"
+              >@Alex_LaNN</a
+            >
+          </div>
+          <div class="contact-item">
+            <span class="contact-type"
+              ><i class="fab fa-github"></i>GitHub:</span
+            >
+            <a
+              href="https://github.com/Alex-LaNN"
+              class="contact-link"
+              target="_blank"
+              >Alex-LaNN</a
+            >
+          </div>
+          <div class="contact-item">
+            <span class="contact-type"
+              ><i class="fab fa-linkedin"></i>LinkedIn:</span
+            >
+            <a
+              href="https://www.linkedin.com/in/alex-kolomiiets"
+              class="contact-link"
+              target="_blank"
+              >alex-kolomiiets</a
+            >
+          </div>
         </div>
         <!--Tech Skills-->
         <div class="tech-skills">
           <h3 class="sidebar-title">Tech Skills</h3>
-          <ul class="tech-skills-list">
-            <li class="tech-skills-item">
-              <span class="tech-skills-text">NestJS</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-text">TypeScript</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-text">MySQL</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-text">AWS S3</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-text">HTML5</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-text">CSS3</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-text">JavaScript</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-text">Node.js</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-text">Docker</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-text">Jest</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-text">REST API</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-text">Git</span>
-            </li>
-          </ul>
+          <div class="skills-container">
+            <ul class="skills-list">
+              <li class="skills-item">
+                <span class="skills-text">NestJS</span>
+              </li>
+              <li class="skills-item">
+                <span class="skills-text">TypeScript</span>
+              </li>
+              <li class="skills-item">
+                <span class="skills-text">MySQL</span>
+              </li>
+              <li class="skills-item">
+                <span class="skills-text">AWS S3</span>
+              </li>
+              <li class="skills-item">
+                <span class="skills-text">HTML5</span>
+              </li>
+              <li class="skills-item"><span class="skills-text">CSS3</span></li>
+            </ul>
+            <ul class="skills-list">
+              <li class="skills-item">
+                <span class="skills-text">JavaScript</span>
+              </li>
+              <li class="skills-item">
+                <span class="skills-text">Node.js</span>
+              </li>
+              <li class="skills-item">
+                <span class="skills-text">Docker</span>
+              </li>
+              <li class="skills-item"><span class="skills-text">Jest</span></li>
+              <li class="skills-item">
+                <span class="skills-text">REST API</span>
+              </li>
+              <li class="skills-item"><span class="skills-text">Git</span></li>
+            </ul>
+          </div>
         </div>
         <!--Soft Skills-->
         <div class="soft-skills">
