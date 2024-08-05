@@ -140,7 +140,14 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
+  min-width: 70px;
+  display: inline-block;
   color: #ffffff;
+}
+
+.contacts p {
+  display: flex;
+  align-items: baseline;
 }
 
 .invisible {
