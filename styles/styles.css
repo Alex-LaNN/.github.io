@@ -224,7 +224,7 @@ body {
 .fa-phone { color: #28a745; }
 .fa-envelope { color: #dc3545; }
 .fa-telegram-plane { color: #0088cc; }
-.fa-github { color: #333; }
+.fa-github { color: #8a8888; }
 .fa-linkedin { color: #0077b5; }
 
 
@@ -253,8 +253,8 @@ body {
 
 .skills-container {
   display: flex;
-  justify-content: space-between;
-  margin-right: -40px;
+  justify-content: flex-start;
+  gap: 5px;
 }
 
 .skills-list {
