@@ -75,7 +75,11 @@ body {
 }
 
 .education-item:not(:first-child) {
-  margin-top: 30px;
+  margin-top: 40px;
+}
+
+.education-item .profession:not(:first-of-type) {
+  margin-top: 15px;
 }
 
 .place-study {
@@ -91,7 +95,7 @@ body {
 }
 
 .education .diploma-info {
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 0.9em;
 }
 
@@ -115,6 +119,18 @@ body {
   text-decoration: none;
 }
 
+.education-item .course {
+  margin-top: 20px;
+}
+
+.education-item .course:first-of-type {
+  margin-top: 10px;
+}
+
+.diploma-label {
+  color: #007bff;
+}
+
 .diploma-link {
   color: #007bff;
   text-decoration: none;
@@ -131,6 +147,15 @@ body {
   line-height: 20px;
   color: #fb6d3a;
   margin-bottom: 10px;
+}
+
+.place-study a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.place-study a:hover {
+  text-decoration: underline;
 }
 
 .profession {
